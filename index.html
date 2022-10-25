@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  
+    <div class="container">
+        <form action="" id="loginForm">
+
+          <h2>Cadastro</h2>
+
+          <p><label for="email">Email</label>
+
+            <input type="text" name="email" id="email" placeholder="email" required/></p>
+
+          <p><label for="senha">Senha</label>
+
+            <input type="senha" name="senha" id="senha" placeholder="senha" minlength="6"/> 
+            
+            <input type="checkbox" onclick="Toogle()"> <b>Show</b>
+
+            <script>
+
+                function toggle() {
+
+                    var temp = document.getElementById("typepass");
+
+                    if(temp.type === "senha"){
+                        temp.type = "text";
+                    }
+
+                    else {
+                        temp.type = "senha";
+                    }
+                }
+
+            </script>
+
+          <p><input type="submit" value="Login" class="button" /></p>
+        </form>
+      </div>
+
+</body>
+</html>
